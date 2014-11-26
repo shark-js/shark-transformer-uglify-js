@@ -4,7 +4,7 @@ const chai      = require('chai');
 const coMocha   = require('co-mocha');
 const expect    = chai.expect;
 
-const TransformerMinifyJs = require('../');
+const TransformerUglifyJs = require('../');
 const Tree      = require('shark-tree');
 const Logger    = require('shark-logger');
 const cofse     = require('co-fs-extra');
@@ -13,7 +13,7 @@ const path      = require('path');
 describe('Initialization', function() {
 	before(function *() {
 		this.logger = Logger({
-			name: 'TransformerMinifyJsLogger'
+			name: 'TransformerUglifyJsLogger'
 		});
 
 		this.files = {};
@@ -36,8 +36,8 @@ describe('Initialization', function() {
 		this.tree = yield Tree(this.files, this.logger);
 	});
 
-	it('should minify js and output valid result', function *() {
-		var tree = yield TransformerMinifyJs.treeToTree(this.tree, this.logger);
+	it('should uglify js and output valid result', function *() {
+		var tree = yield TransformerUglifyJs.treeToTree(this.tree, this.logger);
 
 		expect(tree.getSrcCollectionByDest(this.dest).getFileByIndex(0).getContent())
 			.equal(this.expectDestContent);

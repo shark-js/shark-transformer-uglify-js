@@ -1,2 +1,2 @@
-shark-transformer-minify-js
+shark-transformer-uglify-js
 ===========================
