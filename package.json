@@ -1,6 +1,6 @@
 {
   "name": "shark-transformer-uglify-js",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "shark-transformer-uglify-js",
   "main": "lib/transformer-uglify-js.js",
   "directories": {
