@@ -30,8 +30,8 @@
     "co-mocha": "^1.1.0",
     "extsprintf": "^1.2.1",
     "mocha": "^2.0.1",
-    "shark-logger": "0.1.0",
-    "shark-tree": "0.1.0"
+    "shark-logger": "0.2.0",
+    "shark-tree": "0.2.1"
   },
   "dependencies": {
     "co": "^4.0.1",
